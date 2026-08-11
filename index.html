@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DJ AKKY ARC - Official Music</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            🎧 DJ AKKY ARC
+        </div>
+
+        <p>Official Remix Music Website</p>
+
+    </header>
+
+
+    <!-- SEARCH -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchBox"
+            placeholder="🔍 Search your favourite song..."
+            onkeyup="searchSongs()"
+        >
+
+    </section>
+
+
+    <!-- CATEGORY -->
+    <nav class="categories">
+
+        <button onclick="showAll()">All Songs</button>
+
+        <button onclick="showCategory('remix')">
+            🔥 Remixes
+        </button>
+
+        <button onclick="showCategory('bhakti')">
+            🕉️ Bhakti
+        </button>
+
+        <button onclick="showCategory('adiwasi')">
+            🌿 Adiwasi
+        </button>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <h2 class="section-title">
+            🔥 Latest Remixes
+        </h2>
+
+
+        <div class="songs-container" id="songsContainer">
+
+
+            <!-- SONG 1 -->
+            <div class="song-card"
+                 data-category="bhakti">
+
+                <img
+                    src="https://via.placeholder.com/600x600.png?text=Bhole+Ka+Sawan"
+                    alt="Bhole Ka Sawan Remix"
+                >
+
+                <div class="song-info">
+
+                    <h3>
+                        Bhole Ka Sawan Remix
+                    </h3>
+
+                    <p>
+                        DJ AKKY 2.0 • 125 BPM
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="#"
+                            class="play-btn"
+                            target="_blank"
+                        >
+                            ▶ Play
+                        </a>
+
+                        <a
+                            href="#"
+                            class="download-btn"
+                            download
+                        >
+                            ⬇ Download
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 2 -->
+            <div class="song-card"
+                 data-category="adiwasi">
+
+                <img
+                    src="https://via.placeholder.com/600x600.png?text=Hamare+Adiwasi"
+                    alt="Hamare Adiwasi Remix"
+                >
+
+                <div class="song-info">
+
+                    <h3>
+                        Hamare Adiwasi Remix
+                    </h3>
+
+                    <p>
+                        DJ AKKY ARC x DJ AKKY 2.0
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="#"
+                            class="play-btn"
+                            target="_blank"
+                        >
+                            ▶ Play
+                        </a>
+
+                        <a
+                            href="#"
+                            class="download-btn"
+                            download
+                        >
+                            ⬇ Download
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SONG 3 -->
+            <div class="song-card"
+                 data-category="remix">
+
+                <img
+                    src="https://via.placeholder.com/600x600.png?text=New+Remix"
+                    alt="DJ AKKY ARC Remix"
+                >
+
+                <div class="song-info">
+
+                    <h3>
+                        DJ AKKY ARC New Remix
+                    </h3>
+
+                    <p>
+                        Latest DJ Remix
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="#"
+                            class="play-btn"
+                            target="_blank"
+                        >
+                            ▶ Play
+                        </a>
+
+                        <a
+                            href="#"
+                            class="download-btn"
+                            download
+                        >
+                            ⬇ Download
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- SOCIAL SECTION -->
+    <section class="social-section">
+
+        <h2>Connect With DJ AKKY ARC</h2>
+
+        <a href="#" target="_blank">
+            📱 WhatsApp Group
+        </a>
+
+        <a href="#" target="_blank">
+            📢 WhatsApp Channel
+        </a>
+
+        <a href="#" target="_blank">
+            ▶️ YouTube
+        </a>
+
+        <a href="#" target="_blank">
+            📷 Instagram
+        </a>
+
+        <a href="tel:8878641221">
+            📞 Contact
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>DJ AKKY ARC</h3>
+
+        <p>
+            © 2026 DJ AKKY ARC. All Rights Reserved.
+        </p>
+
+        <p>
+            Only original / licensed music is shared on this website.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
