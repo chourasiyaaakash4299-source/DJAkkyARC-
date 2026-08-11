@@ -1,44 +1,115 @@
+/* ================================
+   DJ AKKY ARC - MAIN STYLE
+================================ */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #080808;
-    color: #ffffff;
-    min-height: 100vh;
+html {
+    scroll-behavior: smooth;
 }
 
-/* HEADER */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+================================ */
 
 .header {
+    width: 100%;
+    padding: 22px 15px;
     text-align: center;
-    padding: 25px 15px;
-    background: linear-gradient(135deg, #111111, #1d001d);
-    border-bottom: 1px solid #333;
+    background: #111118;
+    border-bottom: 1px solid #292936;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 350px;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #352000 0%,
+            #15100b 35%,
+            #08080b 75%
+        );
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: #c9c9c9;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #ff9d00;
+    color: #111111;
+    text-decoration: none;
+    border-radius: 30px;
     font-weight: bold;
-    color: #ff2b2b;
-    text-shadow: 0 0 15px #ff0000;
+    transition: 0.3s;
 }
 
-.header p {
-    margin-top: 8px;
-    color: #bbbbbb;
-    font-size: 14px;
+.hero-btn:hover {
+    transform: scale(1.05);
+    background: #ffc04d;
 }
 
 
-/* SEARCH */
+/* ================================
+   SEARCH
+================================ */
 
 .search-section {
-    padding: 18px 15px 10px;
-    max-width: 800px;
+    padding: 25px 15px 10px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -46,219 +117,331 @@ body {
     width: 100%;
     padding: 15px 18px;
     border-radius: 30px;
-    border: 1px solid #444;
-    background: #151515;
-    color: white;
-    font-size: 15px;
+    border: 1px solid #33333f;
     outline: none;
-}
-
-#searchBox:focus {
-    border-color: #ff2b2b;
-    box-shadow: 0 0 12px #ff000055;
+    background: #15151d;
+    color: #ffffff;
+    font-size: 15px;
 }
 
 #searchBox::placeholder {
-    color: #888;
+    color: #888888;
+}
+
+#searchBox:focus {
+    border-color: #ff9d00;
 }
 
 
-/* CATEGORIES */
+/* ================================
+   CATEGORIES
+================================ */
 
 .categories {
     display: flex;
-    gap: 8px;
-    padding: 10px 15px 20px;
-    overflow-x: auto;
-    max-width: 1000px;
-    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 18px 15px;
 }
 
 .categories button {
-    white-space: nowrap;
-    padding: 10px 16px;
-    border: 1px solid #444;
+    border: 1px solid #34343f;
+    background: #15151d;
+    color: #ffffff;
+    padding: 9px 17px;
     border-radius: 20px;
-    background: #161616;
-    color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .categories button:hover {
-    background: #ff2020;
-    border-color: #ff2020;
+    background: #ff9d00;
+    color: #111111;
 }
 
 
-/* MAIN */
+/* ================================
+   SONG SECTION
+================================ */
 
-main {
-    max-width: 1000px;
+.songs-section {
+    max-width: 900px;
     margin: auto;
-    padding: 0 15px 30px;
+    padding: 25px 15px 45px;
 }
 
-.section-title {
-    font-size: 22px;
-    margin: 10px 0 18px;
-    border-left: 4px solid #ff2020;
-    padding-left: 10px;
+.songs-section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
 }
 
 
-/* SONG CARD */
-
-.songs-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
+/* ================================
+   SONG CARD
+================================ */
 
 .song-card {
-    background: #121212;
-    border: 1px solid #292929;
-    border-radius: 14px;
-    overflow: hidden;
+    display: flex;
+    gap: 18px;
+    margin-bottom: 18px;
+    padding: 15px;
+
+    background: #15151d;
+    border: 1px solid #292936;
+    border-radius: 16px;
+
     transition: 0.3s;
 }
 
 .song-card:hover {
     transform: translateY(-3px);
-    border-color: #ff2020;
-    box-shadow: 0 5px 25px #ff000022;
+    border-color: #ff9d00;
 }
 
 .song-card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-    display: block;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
 .song-info {
-    padding: 13px;
+    flex: 1;
 }
 
 .song-info h3 {
-    font-size: 16px;
-    margin-bottom: 7px;
-    line-height: 1.3;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .song-info p {
-    color: #999;
-    font-size: 12px;
-    margin-bottom: 13px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.song-info .bpm {
+    color: #ffb52e;
+    margin-top: 5px;
 }
 
 
-/* BUTTONS */
+/* ================================
+   AUDIO PLAYER
+================================ */
 
-.buttons {
-    display: flex;
-    gap: 8px;
+.song-buttons {
+    margin-top: 14px;
 }
 
-.buttons a {
-    flex: 1;
-    text-align: center;
-    padding: 10px 5px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: bold;
+audio {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
 }
 
-.play-btn {
-    background: #222;
-    color: white;
-    border: 1px solid #555;
-}
+
+/* ================================
+   DOWNLOAD BUTTON
+================================ */
 
 .download-btn {
-    background: #e91e1e;
-    color: white;
-}
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 17px;
 
-.play-btn:hover {
-    background: #333;
+    background: #ff9d00;
+    color: #111111;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
 .download-btn:hover {
-    background: #ff3838;
+    background: #ffc04d;
+    transform: translateY(-2px);
 }
 
 
-/* SOCIAL */
+/* ================================
+   ABOUT
+================================ */
 
-.social-section {
-    max-width: 600px;
-    margin: 20px auto 40px;
-    padding: 20px 15px;
+.about {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
     text-align: center;
+    border-top: 1px solid #252530;
 }
 
-.social-section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+.about h2 {
+    margin-bottom: 12px;
 }
 
-.social-section a {
-    display: block;
-    margin: 9px 0;
-    padding: 13px;
-    border-radius: 10px;
-    background: #151515;
-    border: 1px solid #303030;
-    color: white;
+.about p {
+    color: #aaaaaa;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    text-align: center;
+    padding: 35px 20px;
+    background: #101017;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #aaaaaa;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #ffae22;
     text-decoration: none;
-}
-
-.social-section a:hover {
-    background: #222;
-    border-color: #ff2020;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
-/* FOOTER */
+/* ================================
+   SOCIAL
+================================ */
+
+.social {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.social h2 {
+    margin-bottom: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    padding: 11px 16px;
+    border-radius: 8px;
+
+    background: #181821;
+    border: 1px solid #30303b;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    background: #ff9d00;
+    color: #111111;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
 
 footer {
     text-align: center;
-    padding: 25px 15px;
-    background: #050505;
-    border-top: 1px solid #222;
+    padding: 30px 15px;
+    background: #08080b;
+    border-top: 1px solid #252530;
 }
 
 footer h3 {
-    color: #ff2929;
     margin-bottom: 8px;
 }
 
 footer p {
-    color: #777;
-    font-size: 12px;
-    margin: 5px;
+    color: #888888;
+    font-size: 13px;
+}
+
+footer .copyright {
+    margin-top: 5px;
 }
 
 
-/* MOBILE */
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
 
 @media (max-width: 600px) {
 
     .logo {
-        font-size: 25px;
+        font-size: 23px;
     }
 
-    .songs-container {
-        grid-template-columns: 1fr;
+    .hero {
+        min-height: 300px;
+        padding: 55px 15px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .song-card {
+        flex-direction: column;
+    }
+
+    .song-card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .song-info h3 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
-    .buttons a {
-        padding: 11px 5px;
-        font-size: 13px;
+    audio {
+        width: 100%;
     }
+
+    .download-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* ================================
+   SMALL PHONE
+================================ */
+
+@media (max-width: 380px) {
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .categories button {
+        font-size: 12px;
+        padding: 8px 13px;
+    }
+
 }
