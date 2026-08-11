@@ -1,411 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<div class="song-card"
+     data-category="adivasi"
+     data-name="Hamare Adiwasi Remix">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="DJ AKKY ARC - Official Remix Music Website. Listen and download latest DJ remixes.">
-
-    <meta name="keywords"
-          content="DJ AKKY ARC, DJ Akky, remix songs, DJ remix, latest remix">
-
-    <meta name="author"
-          content="DJ AKKY ARC">
-
-    <title>DJ AKKY ARC - Official Music</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- ================= HEADER ================= -->
-
-<header class="header">
-
-    <div class="logo">
-        DJ AKKY ARC
-    </div>
-
-    <div class="tagline">
-        Official Remix Music Website
-    </div>
-
-</header>
+    <img
+        src="images/hamare-adiwasi.jpg"
+        alt="Hamare Adiwasi Remix"
+        class="song-image">
 
 
-<!-- ================= HERO ================= -->
+    <div class="song-info">
 
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>DJ AKKY ARC</h1>
+        <h2>
+            Hamare Adiwasi Remix
+        </h2>
 
         <p>
-            Latest Remix Songs • DJ Music • Exclusive Releases
+            DJ AKKY ARC • 140 BPM
         </p>
 
-        <a href="#songs" class="hero-btn">
-            🎧 Listen Now
-        </a>
 
-    </div>
+        <div class="buttons">
 
-</section>
-
-
-<!-- ================= SEARCH ================= -->
-
-<section class="search-section">
-
-    <input
-        type="text"
-        id="searchBox"
-        placeholder="🔍 Search your favourite song..."
-        onkeyup="searchSongs()"
-    >
-
-</section>
+            <button
+                class="play-btn"
+                onclick="playSong(
+                'songs/hamare-adiwasi.mp3',
+                this)">
+                ▶ Play
+            </button>
 
 
-<!-- ================= CATEGORIES ================= -->
+            <a
+                class="download-btn"
+                href="songs/hamare-adiwasi.mp3"
+                download>
 
-<section class="categories">
+                ↓ Download
 
-    <button onclick="filterSongs('all')">
-        All
-    </button>
-
-    <button onclick="filterSongs('remix')">
-        Remix
-    </button>
-
-    <button onclick="filterSongs('new')">
-        New Songs
-    </button>
-
-    <button onclick="filterSongs('special')">
-        Special
-    </button>
-
-</section>
-
-
-<!-- ================= SONGS ================= -->
-
-<main id="songs" class="songs-section">
-
-    <h2>🔥 Latest Remixes</h2>
-
-
-    <!-- SONG 1 -->
-
-    <div class="song-card"
-         data-category="remix"
-         data-title="Bhole Ka Sawan Remix">
-
-        <img
-            src="https://via.placeholder.com/600x600.png?text=DJ+AKKY+ARC"
-            alt="Bhole Ka Sawan Remix">
-
-        <div class="song-info">
-
-            <h3>
-                Bhole Ka Sawan Remix
-            </h3>
-
-            <p>
-                DJ AKKY ARC
-            </p>
-
-            <p class="bpm">
-                125 BPM • Remix
-            </p>
-
-            <div class="song-buttons">
-
-                <audio controls preload="none">
-                    <source
-                        src="YOUR-MP3-LINK-HERE.mp3"
-                        type="audio/mpeg">
-                </audio>
-
-                <a
-                    href="YOUR-MP3-LINK-HERE.mp3"
-                    class="download-btn"
-                    download>
-                    ⬇️ Download
-                </a>
-
-            </div>
+            </a>
 
         </div>
 
     </div>
 
-
-    <!-- SONG 2 -->
-
-    <div class="song-card"
-         data-category="new"
-         data-title="Hamare Adiwasi Remix">
-
-        <img
-            src="https://via.placeholder.com/600x600.png?text=HAMARE+ADIWASI"
-            alt="Hamare Adiwasi Remix">
-
-        <div class="song-info">
-
-            <h3>
-                Hamare Adiwasi Remix
-            </h3>
-
-            <p>
-                DJ AKKY ARC x DJ AKKY 2.0
-            </p>
-
-            <p class="bpm">
-                New Release • Remix
-            </p>
-
-            <div class="song-buttons">
-
-                <audio controls preload="none">
-                    <source
-                        src="YOUR-MP3-LINK-HERE.mp3"
-                        type="audio/mpeg">
-                </audio>
-
-                <a
-                    href="YOUR-MP3-LINK-HERE.mp3"
-                    class="download-btn"
-                    download>
-                    ⬇️ Download
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <!-- SONG 3 -->
-
-    <div class="song-card"
-         data-category="special"
-         data-title="Bholenath Special Remix">
-
-        <img
-            src="https://via.placeholder.com/600x600.png?text=BHOLENATH"
-            alt="Bholenath Special Remix">
-
-        <div class="song-info">
-
-            <h3>
-                Bholenath Special Remix
-            </h3>
-
-            <p>
-                DJ AKKY ARC
-            </p>
-
-            <p class="bpm">
-                Sawan Special • Remix
-            </p>
-
-            <div class="song-buttons">
-
-                <audio controls preload="none">
-                    <source
-                        src="YOUR-MP3-LINK-HERE.mp3"
-                        type="audio/mpeg">
-                </audio>
-
-                <a
-                    href="YOUR-MP3-LINK-HERE.mp3"
-                    class="download-btn"
-                    download>
-                    ⬇️ Download
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-</main>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section class="about">
-
-    <h2>🎧 About DJ AKKY ARC</h2>
-
-    <p>
-        Welcome to the official DJ AKKY ARC music website.
-        Here you can listen to the latest DJ remixes,
-        special releases and exclusive music.
-    </p>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section class="contact">
-
-    <h2>📞 Contact</h2>
-
-    <p>
-        For remix, promotion and business enquiries:
-    </p>
-
-    <a href="tel:8878641221">
-        📱 8878641221
-    </a>
-
-</section>
-
-
-<!-- ================= SOCIAL LINKS ================= -->
-
-<section class="social">
-
-    <h2>🌐 Follow DJ AKKY ARC</h2>
-
-    <div class="social-buttons">
-
-        <!-- अपना Instagram link यहाँ डालें -->
-
-        <a
-            href="YOUR-INSTAGRAM-LINK"
-            target="_blank">
-            📸 Instagram
-        </a>
-
-
-        <!-- अपना YouTube link यहाँ डालें -->
-
-        <a
-            href="YOUR-YOUTUBE-LINK"
-            target="_blank">
-            ▶️ YouTube
-        </a>
-
-
-        <!-- अपना WhatsApp Group link यहाँ डालें -->
-
-        <a
-            href="YOUR-WHATSAPP-GROUP-LINK"
-            target="_blank">
-            💬 WhatsApp Group
-        </a>
-
-
-        <!-- अपना WhatsApp Channel link यहाँ डालें -->
-
-        <a
-            href="YOUR-WHATSAPP-CHANNEL-LINK"
-            target="_blank">
-            📢 WhatsApp Channel
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <h3>
-        DJ AKKY ARC
-    </h3>
-
-    <p>
-        © 2026 DJ AKKY ARC. All Rights Reserved.
-    </p>
-
-    <p class="copyright">
-        Music &amp; content belongs to their respective owners.
-    </p>
-
-</footer>
-
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-function searchSongs() {
-
-    let input =
-        document.getElementById("searchBox")
-        .value
-        .toLowerCase();
-
-    let songs =
-        document.querySelectorAll(".song-card");
-
-    songs.forEach(function(song) {
-
-        let title =
-            song.getAttribute("data-title")
-            .toLowerCase();
-
-        if (title.includes(input)) {
-
-            song.style.display = "flex";
-
-        } else {
-
-            song.style.display = "none";
-
-        }
-
-    });
-
-}
-
-
-function filterSongs(category) {
-
-    let songs =
-        document.querySelectorAll(".song-card");
-
-    songs.forEach(function(song) {
-
-        let songCategory =
-            song.getAttribute("data-category");
-
-        if (
-            category === "all" ||
-            songCategory === category
-        ) {
-
-            song.style.display = "flex";
-
-        } else {
-
-            song.style.display = "none";
-
-        }
-
-    });
-
-}
-
-</script>
-
-
-</body>
-</html>
+</div>
